@@ -1,0 +1,66 @@
+﻿<Page
+    x:Class="fitnessappbackend.StartPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:fitnessappbackend"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="startPageTextBlock" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Lets Begin" VerticalAlignment="Center" FontSize="18" Grid.ColumnSpan="2"/>
+        <Button x:ConnectionId='1' x:Name="homeButton" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" BorderThickness="1" Width="109.166664123535"                          Content="Home"/>
+        <ScrollViewer Grid.ColumnSpan="2" Margin="0,57,0,-582.5" Grid.RowSpan="4" Height="500">
+            <Grid HorizontalAlignment="Left" Height="1115" VerticalAlignment="Top" Width="400">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="squatTextBlock" HorizontalAlignment="Left" Margin="15,25,0,0" TextWrapping="Wrap" Text="1. Squat" VerticalAlignment="Top" FontSize="18"/>
+                <TextBlock x:Name="squatRepInputTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="15,25,0,0" TextWrapping="Wrap" Text="Reps Completed:" VerticalAlignment="Top" FontSize="12"/>
+                <TextBox x:Name="squatRepsTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="110,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" InputScope="Number" Width="63"/>
+                <TextBlock x:Name="squatWeightTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="15,90,0,0" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" FontSize="12"/>
+                <TextBox x:Name="squatWeightTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="110,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" InputScope="Number"/>
+                <TextBlock x:Name="squatRepTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="27,50,0,0" FontSize="12" Grid.ColumnSpan="2"/>
+                <Image x:Name="squatImage" HorizontalAlignment="Left" Height="100" Margin="15,72,0,-125.333" Grid.RowSpan="4" VerticalAlignment="Top" Width="100" Source="Assets/Logo.png" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="squatDescription" HorizontalAlignment="Left" Margin="15,175,15,0" TextWrapping="Wrap" Text="Set up in a squat rack or cage. Grasp the bar as far apart as is comfortable and step under it. Squeeze your shoulder blades together and nudge the bar out of the rack. Step back and stand with your feet shoulder width and your toes turned slightly outward. Take a deep breath and bend your hips back and then bend your knees to lower your body as far as you can without losing the arch in your lower back. Push your knees outward as you descend. Extend your hips to come back up, continuing to push your knees outward." VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="overheadPressTextBlock" HorizontalAlignment="Left" Margin="15,25,0,0" TextWrapping="Wrap" Text="2A. Overhead Press" VerticalAlignment="Top" FontSize="18" Grid.Row="1" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="overheadPressRepTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="27,50,0,0" FontSize="12" Grid.Row="1" Grid.ColumnSpan="2"/>
+                <Image x:Name="overheadPressImage" HorizontalAlignment="Left" Height="100" Margin="15,72,0,0" VerticalAlignment="Top" Width="100" Source="Assets/Logo.png" Grid.Row="1" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="overheadPressDescription" HorizontalAlignment="Left" Margin="15,180,0,0" TextWrapping="Wrap" Text="Set the bar up in a squat rack or cage and grasp it just outside shoulder width. Take the bar off the rack and hold it at shoulderlevel with your forearms perpendicular to the floor. Squeeze the bar and brace your abs. Press the bar overhead, pushing your head forward and shrugging your traps as the bar passes your face." VerticalAlignment="Top" Grid.RowSpan="2" Grid.Row="1" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="pullUpTextBlock" HorizontalAlignment="Left" Margin="15,25,0,0" TextWrapping="Wrap" Text="2B. Weighted Pullup" VerticalAlignment="Top" FontSize="18" Grid.Row="2" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="pullUpRepTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="27,50,0,0" FontSize="12" Grid.Row="2" Grid.ColumnSpan="2"/>
+                <Image x:Name="pullUpImage" HorizontalAlignment="Left" Height="100" Margin="15,72,0,0" VerticalAlignment="Top" Width="100" Source="Assets/Logo.png" Grid.Row="2" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="pullUpDescription" HorizontalAlignment="Left" Margin="15,180,0,0" TextWrapping="Wrap" Text="Attach a weighted belt to your waist, hold a dumbbell between your feet, or if you can't complete your reps with weight, use body weight alone. Hang from a pullup bar with hands just outside shoulder width. Pull yourself up until your chin is over the bar." VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="overheadPressRepsTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="110,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" InputScope="Number" Width="63" Grid.Row="1"/>
+                <TextBox x:Name="pullUpRepsTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="110,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" InputScope="Number" Width="63" Grid.Row="2"/>
+                <TextBlock x:Name="overheadPressRepInputTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="15,25,0,0" TextWrapping="Wrap" Text="Reps Completed:" VerticalAlignment="Top" FontSize="12" Grid.Row="1"/>
+                <TextBlock x:Name="pullUpRepInputTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="15,25,0,0" TextWrapping="Wrap" Text="Reps Completed:" VerticalAlignment="Top" FontSize="12" Grid.Row="2"/>
+                <TextBlock x:Name="overheadPressWeightTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="15,90,0,0" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" FontSize="12" Grid.Row="1"/>
+                <TextBlock x:Name="pullUpWeightTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="15,90,0,0" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" FontSize="12" Grid.Row="2"/>
+                <TextBox x:Name="overheadPressWeightTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="110,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Grid.Row="1" InputScope="Number"/>
+                <TextBox x:Name="pullUpWeightTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="110,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Grid.Row="2" InputScope="Number"/>
+                <Button x:ConnectionId='2' x:Name="completeWorkoutButton" Content="Workout Complete" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Row="3" Grid.ColumnSpan="2" Margin="15,10,15,0"                                    />
+            </Grid>
+        </ScrollViewer>
+
+    </Grid>
+</Page>
+

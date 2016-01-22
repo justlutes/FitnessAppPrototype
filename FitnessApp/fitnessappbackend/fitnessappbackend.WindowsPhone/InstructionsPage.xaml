@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="fitnessappbackend.IntructionsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:fitnessappbackend"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="instructionTextBlock" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Instructions" VerticalAlignment="Center" FontSize="18" Grid.ColumnSpan="2"/>
+        <Button x:Name="homeButton" Content="Home" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" BorderThickness="1" Width="109.166664123535" Click="homeButton_Click"/>
+        <Button x:Name="aboutButton" Content="About" HorizontalAlignment="Stretch" Margin="0,-0.5,0,-22" Grid.Row="1" VerticalAlignment="Top" Click="aboutButton_Click" Background="#FF2980B9" Height="80"/>
+        <Button x:Name="exercisesButton" Content="Exercises" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1" VerticalAlignment="Top" Height="80" Click="exercisesButton_Click"/>
+        <TextBlock x:Name="aboutTitleTextBlock" Margin="15,0,0,0" Grid.Row="2" TextWrapping="Wrap" Text="HOW DOES IT WORK?" VerticalAlignment="Center" SelectionHighlightColor="{x:Null}" Foreground="#FF2980B9" Grid.ColumnSpan="2" FontSize="22"/>
+        <TextBlock x:Name="aboutParagraphTextBlock" Margin="15,25,15,0" Grid.Row="3" TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="exerciseListTextBlock" Margin="15,0.133,0,196.2" Grid.Row="2" TextWrapping="Wrap" Text="THE EXERCISES" VerticalAlignment="Center" SelectionHighlightColor="{x:Null}" Foreground="#FF2980B9" Grid.ColumnSpan="2" FontSize="22" Grid.RowSpan="2" Visibility="Collapsed"/>
+        <Grid x:Name="ExersiseGrid" HorizontalAlignment="Left" Height="476" Grid.RowSpan="2" VerticalAlignment="Top" Width="385" Margin="15,26.5,0,-279.167" Grid.Row="2" Grid.ColumnSpan="2" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Image x:Name="pushUpImage" HorizontalAlignment="Left" Height="75" Margin="15,15,0,0" VerticalAlignment="Top" Width="75" Source="Assets/pushup.png"/>
+            <TextBlock x:Name="pushUpTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="PUSH UPS" VerticalAlignment="Top" Margin="15,55,0,0"/>
+            <TextBlock x:Name="pushUpPTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." VerticalAlignment="Center" Margin="15,70,15,0"/>
+        </Grid>
+
+    </Grid>
+</Page>
